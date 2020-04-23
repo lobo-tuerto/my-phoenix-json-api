@@ -11,6 +11,10 @@ config :my_app,
   ecto_repos: [MyApp.Repo],
   generators: [binary_id: true]
 
+# Add support for microseconds at the DB level
+# this avoids having to configure it on every migration file
+config :my_app, MyApp.Repo, migration_timestamps: [type: :utc_datetime_usec]
+
 # Configures the endpoint
 config :my_app, MyAppWeb.Endpoint,
   url: [host: "localhost"],
