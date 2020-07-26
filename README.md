@@ -1,5 +1,7 @@
 # MyApp
 
+![Elixir CI][2]
+
 To start your Phoenix server:
 
 * Setup the project with `mix setup`
@@ -25,3 +27,4 @@ This repository is the resulting code from the tutorial
 
 
 [1]: https://lobotuerto.com/blog/building-a-json-api-in-elixir-with-phoenix
+[2]: https://github.com/lobo-tuerto/my-phoenix-json-api/workflows/Elixir%20CI/badge.svg
