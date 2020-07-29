@@ -49,7 +49,11 @@ jobs:
       run: node --version
 
     - name: Output git version
-      run: git --version
+      run: |
+        git --version
+        git status
+        git branch -a
+        git branch
 
     - name: Install dependencies
       run: mix deps.get
