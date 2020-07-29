@@ -48,6 +48,9 @@ jobs:
     - name: Output Node.js version
       run: node --version
 
+    - name: Output git version
+      run: git --version
+
     - name: Install dependencies
       run: mix deps.get
 
